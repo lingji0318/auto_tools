@@ -26,6 +26,7 @@ print("\033[0;33;40m硬盘随机读测试\033[0m")
 file = open('fio_suiji.txt', 'a')
 file.write("硬盘随机读测试\n")
 output3=fio_test("randread")
+
 file.write(output3)
 
 print("\033[0;33;40m硬盘随机写测试\033[0m")
