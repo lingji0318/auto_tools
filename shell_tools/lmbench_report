@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "输入核数：$1"
+cd bin
+echo "内存读带宽测试"
+./bw_mem -P $1 256m rd
+echo "内存写带宽测试"
+./bw_mem -P $1 256m wr
+echo "内存拷贝带宽测试"
+./bw_mem -P $1 256m cp
+echo "内存延迟性能测试"
+./lat_mem_rd -P 1 256m 64

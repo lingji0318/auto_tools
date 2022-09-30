@@ -1,6 +1,5 @@
 import os
 import sys
-import openpyxl
 import re
 
 filepath = sys.argv[1]
